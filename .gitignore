@@ -1,0 +1,40 @@
+gitignore = """# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+
+# Data
+data/raw/
+data/train/
+data/val/
+data/test/
+*.tif
+*.tiff
+*.svs
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Logs
+logs/
+wandb/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+"""
+
+with open("/content/WSI_Artifact_Detection/.gitignore", "w") as f:
+    f.write(gitignore)
+
+print(".gitignore created")
